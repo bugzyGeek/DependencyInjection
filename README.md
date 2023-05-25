@@ -3,9 +3,9 @@
 This is a C# library that provides some classes and methods for adding and initializing services to an `IServiceCollection` using a factory pattern. The factory pattern is a design pattern that allows creating objects without specifying the exact class or constructor of the object. This library can help you with dependency injection and creating instances of different types at runtime.
 
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/your-username/your-repo-name/your-workflow-name)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/your-username/your-repo-name)
-![Nuget](https://img.shields.io/nuget/v/your-package-name)
-![License](https://img.shields.io/github/license/your-username/your-repo-name)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Bugzygeek/DependencyInjection-Factory)
+![Nuget](https://img.shields.io/nuget/v/Nexus.DependencyInjection.Factory)
+![License](https://img.shields.io/github/license/Bugzygeek/DependencyInjection-Factory)
 
 ## Features
 
