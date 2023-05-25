@@ -10,11 +10,12 @@
     <Copyright>Copyright © 2022 Nana Akwasi Aforo</Copyright>
     <PackageProjectUrl>https://github.com/bugzyGeek/DependencyInjection-Factory</PackageProjectUrl>
     <RepositoryUrl>https://github.com/bugzyGeek/DependencyInjection-Factory</RepositoryUrl>
-    <PackageTags>Factory, Dependency, Injection, DI</PackageTags>
+    <PackageTags>Factory; Dependency; Injection; DI; Extention</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryType>git</RepositoryType>
-    <PackageIcon>_b81bf80c-8132-4a64-81c5-82cf3cbe999e.jfif</PackageIcon>
+    <PackageIcon>_b81bf80c-8132-4a64-81c5-82cf3cbe999e.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Title>Dependency Injection Factory</Title>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,7 +23,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\..\..\..\Downloads\_b81bf80c-8132-4a64-81c5-82cf3cbe999e.jfif">
+    <None Include="..\..\..\..\Documents\_b81bf80c-8132-4a64-81c5-82cf3cbe999e.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
