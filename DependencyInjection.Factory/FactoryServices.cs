@@ -46,19 +46,22 @@ where TImplementation : class, TInterface
                 break;
         }
         services.AddSingleton<IFactory<TInterface>, Factory<TInterface>>();
-        services.AddSingleton<IFactory<TInterface>, FactoryFunc<TInterface>>();
-        services.AddSingleton<Func<TInterface>>(x => () =>
+        services.AddSingleton<Func<Type, TInterface?>>(x => (t) =>
         {
+            if(x is null) 
+                throw new ArgumentNullException(nameof(x));
+
             try
             {
-                return x.GetService<TInterface>()!;
+                return x.GetServices<TInterface>().FirstOrDefault(x => x.GetType().Equals(t));
             }
             catch (InvalidOperationException)
             {
                 using IServiceScope scope = x.CreateScope();
-                return scope.ServiceProvider.GetService<TInterface>()!;
+                return scope.ServiceProvider.GetServices<TInterface>().FirstOrDefault(x => x.GetType().Equals(t));
             }
         });
+
 
         return services;
     }
@@ -90,21 +93,7 @@ where TImplementation : class, TInterface
                 break;
         }
         services.AddSingleton<IFactory<TImplementation>, Factory<TImplementation>>();
-        services.AddSingleton<IFactory<TImplementation>, FactoryFunc<TImplementation>>();
-        services.AddSingleton<Func<TImplementation>>(x => () =>
-        {
-            try
-            {
-                return x.GetService<TImplementation>()!;
-            }
-            catch (InvalidOperationException)
-            {
-                using IServiceScope scope = x.CreateScope();
-                return scope.ServiceProvider.GetService<TImplementation>()!;
-            }
-        });
 
         return services;
     }
-
 }

@@ -6,5 +6,5 @@
 /// <typeparam name="M">The service type registered in the specified <typeparamref name="IServiceCollection"/> to be created</typeparam>
 public interface IFactory<M>
 {
-    M Create();
+    M Create<I>() where I : class, M;
 }
