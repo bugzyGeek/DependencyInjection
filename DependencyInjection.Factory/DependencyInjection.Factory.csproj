@@ -4,7 +4,29 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Nexus.$(AssemblyName)</PackageId>
+    <Authors>Nana Akwasi Aforo</Authors>
+    <Description>DependencyInjection.Factory is a framework that creates any service type using a factory. You can pick the implementation type of the service type at runtime. This feature lets you have multiple implementations of the same interface. The factory supports scoped, singleton, and transient lifetimes. You can register your service types and the factory easily. DependencyInjection.Factory works with .NET 6+.</Description>
+    <Copyright>Copyright © 2022 Nana Akwasi Aforo</Copyright>
+    <PackageProjectUrl>https://github.com/bugzyGeek/DependencyInjection-Factory</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bugzyGeek/DependencyInjection-Factory</RepositoryUrl>
+    <PackageTags>Factory, Dependency, Injection, DI</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>_b81bf80c-8132-4a64-81c5-82cf3cbe999e.jfif</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\Downloads\_b81bf80c-8132-4a64-81c5-82cf3cbe999e.jfif">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
